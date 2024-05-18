@@ -27,12 +27,16 @@ body {
   height: 100%;
 }
 
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
   display: none;
-} */
+}
 
 .scroll-bar-width {
   scrollbar-width: none;
+}
+
+.transition-cubic {
+  transition: width 850ms cubic-bezier(0.420, 0.000, 0.580, 1.000), border-width 850ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
 }
 
 /******** MODAL STYLES **********/
