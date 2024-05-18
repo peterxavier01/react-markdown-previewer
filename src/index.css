@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  height: 100%;
+}
+
+body {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* ::-webkit-scrollbar {
+  display: none;
+} */
+
+.scroll-bar-width {
+  scrollbar-width: none;
+}
+
+/******** MODAL STYLES **********/
+.modal-overlay {
+  @apply bg-black/10 dark:bg-white/10 fixed inset-0 w-full h-full
+}
+
+.modal {
+  @apply fixed top-10 left-10 right-10 bottom-10 bg-main-dark text-gray-100 m-auto rounded-sm max-w-[350px] h-max p-8;
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}
