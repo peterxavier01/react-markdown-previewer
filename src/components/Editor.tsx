@@ -30,7 +30,7 @@ const Editor = () => {
   return (
     <div
       className={cn(
-        "transition-transform duration-500 h-full md:w-1/2",
+        "transition-transform duration-500 h-full md:w-1/2 transition-cubic",
         showPreview ? "w-0 md:w-0" : "w-full md:w-1/2"
       )}
     >
@@ -43,7 +43,7 @@ const Editor = () => {
         <textarea
           title="markdown editor"
           id="editor"
-          className="w-full min-h-screen resize-none h-full transition duration-300 bg-white scroll-bar-width dark:bg-main-dark outline-none caret-highlight-primary p-4 dark:bg-emerald-600"
+          className="w-full min-h-screen resize-none pb-10 h-full transition duration-300 bg-white scroll-bar-width dark:bg-main-dark outline-none caret-highlight-primary p-4"
           value={activeMarkdown.content}
           onChange={handleChange}
         />
