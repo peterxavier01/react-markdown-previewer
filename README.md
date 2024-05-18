@@ -1,30 +1,77 @@
-# React + TypeScript + Vite
+# Frontend Mentor - In-browser markdown editor solution
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a solution to the [In-browser markdown editor challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/inbrowser-markdown-editor-r16TrrQX9). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-Currently, two official plugins are available:
+## Table of contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [Built with](#built-with)
+- [Author](#author)
+- [Commands](#commands)
 
-## Expanding the ESLint configuration
+## Overview
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### The challenge
 
-- Configure the top-level `parserOptions` property like this:
+Users should be able to:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+- Create, Read, Update, and Delete markdown documents
+- Name and save documents to be accessed as needed
+- Edit the markdown of a document and see the formatted preview of the content
+- View a full-page preview of the formatted content
+- View the optimal layout for the app depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Use localStorage to save the current state in the browser that persists when the browser is refreshed
+
+### Screenshot
+
+![screenshot](./src/assets//screenshot.png)
+
+### Links
+
+- Live Site URL: [https://previewmd.netlify.app/](https://previewmd.netlify.app/)
+
+## Built with
+
+- Semantic HTML5 markup
+- Highlight.js - Syntax Higlighting
+- [Marked.js](https://marked.js.org/) - Parse Markdown
+- Tailwind CSS
+- Vite React - JS library
+- [React Toastify](https://github.com/fkhadra/react-toastify#readme) - For Notifications
+- [React Modal](https://github.com/reactjs/react-modal)
+- [Zustand](https://docs.pmnd.rs/zustand/getting-started/introduction) - Global State management
+
+## Author
+
+- LinkedIn - [Peter Uadiale](https://www.linkedin.com/in/peter-o-uadiale-69541a19a/)
+- Twitter - [Peter Uadiale](https://twitter.com/peter_uadiale)
+
+## Commands
+
+### Project setup
+
+```
+npm install
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Compiles and minifies for production
+
+```
+npm run build
+```
+
+### Lints and fixes files
+
+```
+npm run lint
+```
+
+### Run Project
+
+```
+npm run dev
+```
