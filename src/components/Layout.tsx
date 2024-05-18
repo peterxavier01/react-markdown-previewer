@@ -15,7 +15,7 @@ const Layout = () => {
   }, [docName, activeMarkdown]);
 
   return (
-    <div className="flex bg-purple-500 h-full overflow-hidden">
+    <div className="flex min-h-screen w-full overflow-hidden">
       <Editor />
       <Previewer />
     </div>
