@@ -34,13 +34,9 @@ const Previewer = () => {
         showPreview ? "w-full md:w-full" : "w-0 md:w-1/2"
       )}
     >
-      <SectionHeader
-        title="Preview"
-        isIcon
-        onClick={() => setShowPreview()}
-      />
+      <SectionHeader title="Preview" isIcon onClick={() => setShowPreview()} />
       <div
-        className="h-full min-h-screen px-4 pt-4 pb-10 prose dark:prose-invert prose-h6:text-highlight-secondary prose-a:text-highlight-secondary prose-p:text-[15px] prose-li:text-[15px] prose-li:leading-6 prose-h1:text-[32px] prose-h1:leading-[42px] prose-p:leading-6 prose-code:bg-tertiary prose-pre:bg-tertiary prose-blockquote:border-highlight-primary prose-blockquote:bg-white/10"
+        className="h-full min-h-screen px-4 pt-4 pb-10 prose dark:prose-invert prose-h6:text-highlight-secondary prose-code:text-gray-200  prose-a:text-highlight-secondary prose-p:text-[15px] prose-li:text-[15px] prose-li:leading-6 prose-h1:text-[32px] prose-h1:leading-[42px] prose-p:leading-6 prose-code:bg-tertiary prose-pre:bg-tertiary prose-blockquote:border-highlight-primary prose-blockquote:bg-white/10"
         dangerouslySetInnerHTML={{ __html: parsedMarkdown }}
       />
     </div>
