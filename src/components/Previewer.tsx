@@ -30,7 +30,7 @@ const Previewer = () => {
   return (
     <div
       className={cn(
-        "h-full ml-auto md:border-l border-gray-500  bg-white dark:bg-main-dark transition-cubic duration-300 min-h-screen",
+        "h-full ml-auto md:border-l border-gray-500  bg-white dark:bg-main-dark transition-cubic duration-300",
         showPreview ? "w-full md:w-full" : "w-0 md:w-1/2"
       )}
     >
